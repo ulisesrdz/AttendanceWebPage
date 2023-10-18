@@ -1,0 +1,271 @@
+:root{
+    --primary-color:white;
+    --secundary-color:rgb(61,68,73);
+    --highlight-color: #545c61;
+
+    --dt-status-avialable-color:greenyellow;
+    --dt-status-away-color: lightsalmoh;
+    --dt-status-offline-color:lightgray;
+
+    --dt-padding:12px;
+    --dt-padding-s:6px;
+    --dt-padding-xq:2px;
+
+    --dt-border-radius: 3px;
+
+    --dt-background-color-container: #2a3338;
+    --dt-border-color: var(--secundary-color);
+    --dt-bg-color: var(--highlight-color);
+    --dt-text-color: var(--primary-color);
+    --dt-bg-active-button: var(--highlight-color);
+    --dt-text-color-button: var(--primary-color);
+    --dt-text-color-active-button: var(--primary-color);
+    --dt-hover-cell-color: var(--highlight-color);
+    --dt-even-row-color: var(--secundary-color);
+    --dt-focus-color: var(--highlight-color);
+    --dt-input-background-color: var(--secundary-color);
+    --dt-input-color: var(--primary-color);
+  }
+
+
+
+
+  .datatable-container{
+    font-family: 'Times New Roman', Times, serif;
+    background-color: var(--dt-background-color-container);
+    border-radius: var(--dt-background-radius);
+    color: var(--dt-text-color);
+    width: 600px auto;
+    margin: 0 auto;
+    font-size: 12px;
+  }
+
+  .datatable-container .header-tools{
+    border-bottom: solid 1px var(--dt-border-color);
+    padding: var(--dt-padding);
+    display: flex;
+    align-items: baseline;
+  }
+
+  .datatable-container .header-tools .search{
+    width: 30%;
+  }
+
+  .datatable-container .header-tools .search .search-input{
+    width: 100%;
+    background-color: var(--dt-input-background-color);
+    display: block;
+    box-sizing: border-box;
+    border-radius: var(--dt-border-radius);
+    border: solid 1px var(--dt-border-color);
+    color: var(--dt-input-color);
+  }
+
+  .datatable-container .header-tools .tools{
+    width: 70%;
+  }
+
+  .datatable-container .header-tools .tools ul{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: start;
+    align-items: baseline;
+  }
+
+  .datatable-container .header-tools .tools ul li{
+    display: inline-block;
+    margin: 0 var(--dt-padding-xq);
+    align-items: baseline;
+  }
+
+  .datatable-container .footer-tools .list-items{
+    width: 50%;
+  }
+
+  .datatable-container .footer-tools .pages{
+    margin-left: auto;
+    margin-right: 0;
+    width: 50%;
+  }
+
+  .datatable-container .footer-tools .pages ul{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: baseline;
+    justify-content: flex-end;
+  }
+
+  .datatable-container .footer-tools .pages ul li button,
+  .datatable-container .footer-tools .tools ul li button{
+    font-family: 'Times New Roman', Times, serif;
+    color: var(--dt-text-color-button);
+    width: 100;
+    box-sizing: border-box;
+    border: 0;
+    border-radius: var(--dt-border-radius);
+    background: transparent;
+    cursor: pointer;
+  }
+
+  .datatable-container .footer-tools .pages ul li button:hover,
+  .datatable-container .footer-tools .tools ul li button:hover{
+    background: var(--dt-bg-active-button);
+    color: var(--dt-text-color-active-button);
+  }
+
+  .datatable-container .datatable{
+    border-collapse: collapse;
+    width: 100%;
+  }
+
+  .datatable-container .datatable,
+  .datatable-container .datatable th,
+  .datatable-container .datatable td{
+    padding: var(--dt-padding) var(--dt-padding);
+  }
+
+  .datatable-container .datatable td,
+  .datatable-container .datatable th{
+    font-weight: bolder;
+    text-align: center;
+    border-bottom: solid 1px var(--dt-border-color);
+    font-size: 16px;
+  }
+
+  .datatable-container .datatable td{
+    border-bottom: solid 1px var(--dt-border-color);
+  }
+
+  .datatable-container .datatable tbody tr:nth-child(even){
+    background-color: var(--dt-even-row-color);
+  }
+
+  .datatable-container .datatable tbody tr:hover{
+    background-color: var(--dt-hover-cell-color);
+  }
+
+  /* .datatable-container .datatable tbody tr .available::after,
+  .datatable-container .datatable tbody tr .away::after,
+  .datatable-container .datatable tbody tr .offline::after{
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+  .datatable-container .datatable tbody tr .available::after{
+    content: 'Available';
+    color: var(--dt-status-avialable-color);
+  } */
+
+  .content-box-gray .content {
+    overflow: hidden;
+    padding: 15px;
+    font-size: 15px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border: 2px solid gray;
+    color: #3385FF;
+}
+.content-box-gray .title {
+    height:30px;
+    line-height:30px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    background:gray;
+    font-size:18px;
+    font-weight:bold;
+    font-family:verdana;
+    display:block;
+    color:white;
+    display:block;
+    padding:10px;
+    border: 1px solid gray;
+    border-bottom:none;
+}
+
+.box{
+  width: auto;
+  height: auto;
+  background: #fff;
+  color: #fff;
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  box-sizing: border-box;
+  padding:  170px auto;
+}
+
+.page {
+  width: 300px;
+  height: 400px;
+  background: #fff;
+  position: relative;
+  margin: 20px auto;
+  border: 1px solid #ccc;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+}
+
+.content {
+  padding: 20px;
+}
+
+.fold {
+  position: absolute;
+  width: 0;
+  height: 0;
+  top: 0;
+  right: 0;
+  border-top: 40px solid transparent;
+  border-right: 40px solid #fff;
+  z-index: 1;
+  transform: rotate(10deg);
+}
+
+.appBar {
+  position: relative;
+}
+
+.layout {
+  width: auto;
+  margin-left: 16px;
+  margin-right: 16px;
+}
+
+@media (min-width: 600px) {
+  .layout {
+    width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.paper {
+  margin-top: 24px;
+  margin-bottom: 24px;
+  padding: 16px;
+
+  @media (min-width: 600px) {
+    margin-top: 48px;
+    margin-bottom: 48px;
+    padding: 24px;
+  }
+}
+
+.stepper {
+  padding: 24px 0 40px;
+}
+
+.buttons {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.button {
+  margin-top: 24px;
+  margin-left: 8px;
+}
+
+
